@@ -1,0 +1,37 @@
+{
+  "experiment_summary": {
+    "total_days": 21,
+    "total_visitors_a": 10455,
+    "total_visitors_b": 10475,
+    "total_conversions_a": 1043,
+    "total_conversions_b": 1253,
+    "observed_rate_a": 0.09976,
+    "observed_rate_b": 0.11962
+  },
+  "bayesian_results": {
+    "probability_of_beat": 1.0,
+    "probability_of_beat_pct": "100.00%",
+    "relative_lift_pct": 19.6957,
+    "expected_loss": 0.0,
+    "posterior_mean_a": 0.09978,
+    "posterior_mean_b": 0.11943,
+    "hdi_95_a": [
+      0.09412,
+      0.10555
+    ],
+    "hdi_95_b": [
+      0.11332,
+      0.12568
+    ]
+  },
+  "early_stopping": {
+    "triggered": true,
+    "trigger_day": 2,
+    "trigger_reason": "E[Loss]=0.00017 < 0.001 AND PoB=96.7% > 95%",
+    "days_saved": 19,
+    "days_saved_pct": "90.5%"
+  },
+  "decision": "DEPLOY VARIANT B \u2014 Statistical confidence achieved.",
+  "prior_used": "Beta(10, 90) \u2014 informative 10% baseline prior",
+  "n_monte_carlo_samples": 20000
+}
